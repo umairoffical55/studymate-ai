@@ -20,6 +20,15 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Environment variables
+
+- Copy `.env.example` to `.env.local`
+- Set `GROQ_API_KEY` in `.env.local`
+- Keep `.env.local` out of Git: it is already ignored by `.gitignore`
+
+This keeps your API key secret and ensures the app can access it on the server only.
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
