@@ -1,45 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 StudyMate AI — Your Personal Study Planner & AI Tutor
 
-## Getting Started
+> 🚀 **Live Working Application:** [https://studymate-ai-tawny.vercel.app/](https://studymate-ai-tawny.vercel.app/)  
+> 💻 **GitHub Repository:** [https://github.com/umairoffical55/studymate-ai](https://github.com/umairoffical55/studymate-ai)
 
-First, run the development server:
+---
 
-```bash
+## 📌 Problem Statement & Overview
+Students often struggle to stay organized across multiple academic subjects and lack quick, 24/7 assistance when trying to understand difficult concepts. Traditional tutoring can be expensive, inaccessible late at night, or slow to provide immediate answers.
+
+**StudyMate AI** solves this problem by combining an intuitive **Study Task Planner** with an interactive **AI Tutor**. Students can organize their daily study targets with deadlines while instantly getting clear breakdowns of complex topics, key takeaways, and practice quiz questions to test their knowledge on demand.
+
+---
+
+## ✨ Features List
+* 📅 **Study Task Planner:** Add, manage, and track study tasks organized by subject, topic, and deadline date.
+* 🤖 **Interactive AI Tutor:** Enter any complex topic or question to receive simple, student-friendly explanations.
+* 💡 **Key Takeaways & Summaries:** Automatically extracts essential facts into quick, readable bullet points.
+* ❓ **Practice Question Generator:** Generates instant quiz/practice questions to help reinforce learning and test comprehension.
+* ⚡ **Fast & Responsive UI:** Built with modern web technologies, ensuring a clean and seamless layout on both desktop and mobile screens.
+
+---
+
+## 🧠 AI Feature & System Prompt
+The AI Tutor in **StudyMate AI** is powered by the **Groq API** (`llama-3.1-8b-instant`).
+
+### System Prompt / Instructions Used:
+```text
+You are StudyMate AI, an empathetic, patient, and highly knowledgeable AI academic tutor. 
+Your primary goal is to help students learn effectively and test their knowledge.
+
+When given a subject or topic:
+1. Explain the concept clearly using simple, analogy-rich language suitable for students.
+2. Provide 3-4 key bullet takeaways.
+3. End with 2 practice/quiz questions to test understanding.
+Keep your response supportive, structured, concise, and easy to read.
+🛠️ Tools & Technologies Used
+Framework: Next.js (App Router)
+
+Styling: Tailwind CSS
+
+AI Provider: Groq API (llama-3.1-8b-instant)
+
+Deployment Platform: Vercel
+
+Version Control: Git & GitHub
+
+🚀 How to Run Locally
+Clone the repository:
+
+Bash
+git clone [https://github.com/umairoffical55/studymate-ai.git](https://github.com/umairoffical55/studymate-ai.git)
+cd studymate-ai
+Install dependencies:
+
+Bash
+npm install
+Set up Environment Variables:
+Create a .env.local file in the root directory and add your Groq API Key:
+
+Code snippet
+GROQ_API_KEY=your_groq_api_key_here
+Run the development server:
+
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Environment variables
-
-- Copy `.env.example` to `.env.local`
-- Set `GROQ_API_KEY` in `.env.local`
-- Keep `.env.local` out of Git: it is already ignored by `.gitignore`
-
-This keeps your API key secret and ensures the app can access it on the server only.
-
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open http://localhost:3000 in your browser.
